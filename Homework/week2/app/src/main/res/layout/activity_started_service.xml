@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#003F9A"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="#4242ff"
+        android:background="#ED008C"
         android:gravity="center"
         android:padding="10dp"
         android:text="Lotto Service(Started Service)"
@@ -24,10 +25,12 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="10dp">
+
         <Button
             android:id="@+id/lottoButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#ED008C"
             android:text="lotto service"
             android:textAllCaps="true" />
 
@@ -36,12 +39,14 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/lottoTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:text="Lotto 추첨 대기중.."
-                android:gravity="center" />
+                android:textColor="#ffffff" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

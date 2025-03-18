@@ -5,6 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#003F9A"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:background="#4242ff"
+        android:background="#ED008C"
         android:gravity="center"
         android:padding="10dp"
         android:text="Service 종합 모음"
@@ -24,34 +25,44 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:padding="10dp">
+
         <Button
             android:id="@+id/buttonStartedService"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#ED008C"
             android:text="started service"
             android:textAllCaps="true" />
+
         <Button
             android:id="@+id/buttonBoundedService"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#ED008C"
             android:text="bounded service(background service)"
             android:textAllCaps="true" />
+
         <Button
             android:id="@+id/buttonIntentService"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#ED008C"
             android:text="intent service"
             android:textAllCaps="true" />
+
         <Button
             android:id="@+id/buttonForeGroundService"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#ED008C"
             android:text="foreground service"
             android:textAllCaps="true" />
+
         <Button
             android:id="@+id/buttonRemoteService"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#ED008C"
             android:text="remote service"
             android:textAllCaps="true" />
     </LinearLayout>
