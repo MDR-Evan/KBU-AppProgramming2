@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabBackground">@drawable/tab_select</item>
+        <item name="tabIndicatorHeight">4dp</item>
+        <item name="tabSelectedTextColor">@color/white </item>
+        <item name="tabTextColor">@color/purple_700</item>
+    </style>
+</resources>
