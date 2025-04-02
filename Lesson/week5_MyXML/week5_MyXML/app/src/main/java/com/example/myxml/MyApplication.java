@@ -6,6 +6,8 @@ public class MyApplication extends Application {
 
     private String xml;
     private int type = 1;
+    private String url = "http://192.168.93.1:216/";
+    private String[] page = new String[] {url + "member.xml", url + "nation.xml"};
 
 
     public String getXml() {
@@ -22,5 +24,9 @@ public class MyApplication extends Application {
 
     public void setType(int type) {
         this.type = type;
+    }
+
+    public String getPage(int index) {
+        return page[index];
     }
 }

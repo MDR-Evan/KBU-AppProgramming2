@@ -14,6 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import java.io.IOException;
+import java.util.concurrent.ExecutionException;
 
 public class SourceFragment extends Fragment {
     private Activity activity;
@@ -57,6 +58,25 @@ public class SourceFragment extends Fragment {
                 Toast.makeText(activity, e.getMessage(), Toast.LENGTH_SHORT).show();
             }
             textView.setText(application.getXml());
+        } else if (application.getType() == 4) {
+            DownloadThread thread = new DownloadThread(activity, application.getPage(0));
+            thread.start();
+            try {
+                thread.join();
+                application.setXml(thread.getResult());
+                textView.setText(application.getXml());
+            } catch (InterruptedException e) {
+                Toast.makeText(activity, e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
+        } else if (application.getType() == 5) {
+            DownloadAsyncTask task = new DownloadAsyncTask(activity);
+            try {
+                String result = task.execute(application.getPage(1)).get();
+                application.setXml(result);
+                textView.setText(application.getXml());
+            } catch (ExecutionException | InterruptedException e) {
+                Toast.makeText(activity, e.getMessage(), Toast.LENGTH_SHORT).show();
+            }
         }
     }
 }

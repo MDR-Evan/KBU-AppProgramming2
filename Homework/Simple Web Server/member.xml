@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<members>
+    <member>
+       <name>이대한</name>
+       <contact email = "dhlee@kbu.ac.kr"/>
+       <title>컴퓨터정보과 교수</title>
+   </member>
+   <member>
+       <name>정명식</name>
+       <contact email = "msjung@gmail.com"/>
+       <title>대한주식회사 CEO</title>
+   </member>
+   <member>
+       <name>나유라</name>
+       <contact email = "yoora@gmail.com"/>
+       <title>(주)디자인 CTO</title>
+   </member>
+</members>

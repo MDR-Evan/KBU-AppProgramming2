@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+ <nation>
+   <name>Republic of Korea</name>
+    <flag>https://cdn.pixabay.com/photo/2013/07/13/14/17/south-korea-162427_1280.png</flag>
+   <lang>한국어</lang>
+   <capital>서울(Seoul)</capital>
+   <currency>
+     <code>KRW</code>
+     <currencyname>원</currencyname>
+  </currency>
+ </nation>
+ <nation>
+   <name>JAPAN</name>
+    <flag>https://cdn.pixabay.com/photo/2013/07/13/14/15/japan-162328_1280.png</flag>
+    <lang>일본어</lang>
+   <capital>도쿄도(Tokyo)</capital>
+   <currency>
+     <code>JPY</code>
+     <currencyname>Japanese yen(¥)</currencyname>
+    </currency>
+ </nation>
+ <nation>
+    <name>United States of America</name>
+    <flag>https://cdn.pixabay.com/photo/2013/07/13/12/51/flag-160479_960_720.png</flag>
+    <lang>English</lang>
+    <capital>Washington, D.C.</capital>
+    <currency>
+      <code>USD</code>
+      <currencyname>U.S. dollar($)</currencyname>
+    </currency>
+ </nation>
+</root>

@@ -91,6 +91,12 @@ public class MainActivity extends AppCompatActivity {
             case R.id.item3:
                 application.setType(3);
                 break;
+            case R.id.item4:
+                application.setType(4);
+                break;
+            case R.id.item5:
+                application.setType(5);
+                break;
         }
         item.setChecked(true);
         update();
