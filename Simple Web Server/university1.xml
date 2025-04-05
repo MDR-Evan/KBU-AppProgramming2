@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<students>
+	<student studentid="20181579" name="홍길동">컴퓨터공학과</student>
+	<student studentid="20181537" name="김현아">간호학과</student>
+	<student studentid="20181611" name="제갈민재">건축공학과</student>
+	<student studentid="20171512" name="배동혁">컴퓨터공학과</student>
+</students>

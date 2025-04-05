@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+	<user>
+		<name>홍길동</name>
+		<designation>Team Leader</designation>
+		<location>
+			<city>홍천</city>
+			<province>강원도</province>
+		</location>
+	</user>
+	<user>
+		<name>윤석열</name>
+		<designation>검찰총장</designation>
+		<location>
+			<city>용산구</city>
+			<province>서울특별시</province>
+		</location>
+	</user>
+	<user>
+		<name>이강인</name>
+		<designation>후보선수</designation>
+		<location>
+			<city>발렌시아</city>
+			<province>스페인</province>
+		</location>
+	</user>
+	<user>
+		<name>이대한</name>
+		<designation>나의조국</designation>
+		<location>
+			<city>해운대구</city>
+			<province>부산광역시</province>
+		</location>
+	</user>
+</users>

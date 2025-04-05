@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<members>
+	<member>
+		<name>홍길동</name>
+		<birth>1972</birth>
+	</member>
+	<member>
+		<name>이대한</name>
+		<birth>2003</birth>
+	</member>
+	<member>
+		<name>한민국</name>
+		<birth>1997</birth>
+	</member>
+	<member>
+		<name>이미나</name>
+		<birth>2002</birth>
+	</member>
+</members>

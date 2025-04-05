@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<car>
+     <title>자동차 판매</title>
+     <items>
+        <sedan type ="대형" cc = "3000" price = "4000"/>
+        <product>그랜져</product>
+     </items>
+     <items>
+       <sedan type ="중형" cc = "2000" price = "3000"/>
+       <product>소나타</product>
+     </items>
+     <items>
+        <sedan type ="소형" cc = "900" price = "2000"/>
+        <product>티코</product>
+    </items>
+</car>
