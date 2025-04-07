@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persons>
+	<person id="2101023">
+		<name>한민국</name>
+		<age>18</age>
+	</person>
+	<person id="2301345">
+		<name>이대한</name>
+		<age>23</age>
+	</person>
+	<person id="2301421">
+		<name>카타르</name>
+		<age>20</age>
+	</person>
+</persons>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+	<user>
+		<name>홍 길동</name>
+		<designation>Team Leader</designation>
+		<location>
+			<city>영월</city>
+			<province>강원도</province>
+		</location>
+	</user>
+	<user>
+		<name>이 순신</name>
+		<designation>Agricultural Officer</designation>
+		<location>
+			<city>아산</city>
+			<province>충청남도</province>
+		</location>
+	</user>
+	<user>
+		<name>박 명동</name>
+		<designation>Charted Accountant</designation>
+		<location>
+			<city>서울</city>
+			<province>서울특별시</province>
+		</location>
+	</user>
+</users>

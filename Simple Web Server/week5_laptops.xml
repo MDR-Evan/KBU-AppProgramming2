@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<laptops>
+	<notebook model = "ThinkPad X1 Carbon 8세대">
+		<brand>Lenovo</brand>
+		<price>₩2,549,000</price>
+		<description>최초의 인텔®모바일 인증 노트북 시리즈 중 하나로 35.56cm (14형) 
+X1 Carbon 8세대는 오래 지속되는 배터리 수명, 업계 최고의 연결성, 고속 충전 기술까지
+지원하는 우수한 모바일 성능을 자랑합니다. </description>
+		<technical-details>
+Intel 2nd gen Core i3-2367 1.40 GHz (6MB Cache), 6 GB DIMM, 500GB 
+5400 rpm SATA Hard Drive, 13-Inch Screen, Windows 10 Home Premium 64-bit 
+</technical-details>
+		<image>https://www.computerspace.co.kr/data/pimg/174/174543.jpg</image>
+	</notebook>
+	<notebook model = "ASUS 크리에이터X – X571">
+		<brand>ASUS</brand>
+		<price>₩1,199,000</price>
+		<description>Strikingly thin with more room to view.</description>
+		<technical-details>
+Intel Core i7-2637M (1.70GHz, 4MB Cache), 4 GB DIMM\n256GB Solid 
+State Drive, 13-Inch Screen, Windows 7 Home Premium 64-bit</technical-details>
+		<image>https://gdimg.gmarket.co.kr/3954199633/still/280?ver=1719977788</image>
+	</notebook>
+	<notebook model = "ChromeBook – C214MA">
+		<brand>SAMSUNG</brand>
+		<price>₩499,000</price>
+		<description>Strikingly thin, with more room to view. </description>
+		<technical-details>
+Intel® Celeron® N4000 (1.70GHz, 4MB Cache), 4 GB DIMM, 64G eMMC, 
+11.6형 HD 1366×768 안티글레어 터치스크린, Chrome </technical-details>
+		<image>https://www.lge.co.kr/kr/images/notebook/md10368828/md10368828-
+280x280.jpg</image>
+	</notebook>
+</laptops>

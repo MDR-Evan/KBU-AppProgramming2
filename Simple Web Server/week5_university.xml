@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<students>
+	<student>
+		<name>홍길동</name>
+		<item studentid="20181579">컴퓨터공학과</item>
+	</student>
+	<student>
+		<name>김현아</name>
+		<item studentid="20181573">간호학과</item>
+	</student>
+	<student>
+		<name>제갈민제</name>
+		<item studentid="20181611">건축공학과</item>
+	</student>
+	<student>
+		<name>배동혁</name>
+		<item studentid="20171512">컴퓨터공학과</item>
+	</student>
+</students>
