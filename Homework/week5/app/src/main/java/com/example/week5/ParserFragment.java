@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -27,33 +28,29 @@ public class ParserFragment extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        if (application.getType() == 3 || application.getType() == 5) {
-            ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.listview_fragment, container, false);
-            listView = viewGroup.findViewById(R.id.listView);
-            return viewGroup;
-        } else {
-            ViewGroup viewGroup = (ViewGroup) inflater.inflate(R.layout.source_fragment, container, false);
-            textView = viewGroup.findViewById(R.id.textView);
-            return viewGroup;
-        }
+    public View onCreateView(@NonNull LayoutInflater inflater,
+                             @Nullable ViewGroup container,
+                             @Nullable Bundle savedInstanceState) {
+        View view = inflater.inflate(R.layout.listview_fragment, container, false);
+        listView = view.findViewById(R.id.listView); // ✅ 반드시 필요
+        return view;
     }
 
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        DOMParser parser = new DOMParser(activity);
-        int type = application.getType();
 
-        if (type == 3 || type == 5) {
-            ArrayList<Person> list = parser.parsingPersonList(application.getXml());
-            PersonAdapter adapter = new PersonAdapter(activity, list);
-            if (listView != null) {
-                listView.setAdapter(adapter);
-            }
-        } else {
-            if (textView != null) {
-                textView.setText(parser.parsing1(application.getXml()));
-            }
+    @Override
+    public void onViewCreated(@NonNull View view,
+                              @Nullable Bundle savedInstanceState) {
+        MyApplication app = (MyApplication) requireActivity().getApplication();
+        String xml = app.getXml();
+
+        if (xml == null || xml.trim().isEmpty()) {
+            Toast.makeText(requireContext(), "XML 데이터가 없습니다.", Toast.LENGTH_SHORT).show();
+            return;
         }
+
+        DOMParser parser = new DOMParser(requireContext());
+        ArrayList<Person> list = parser.parsingPersonList(xml);
+        PersonAdapter adapter = new PersonAdapter(requireContext(), list);
+        listView.setAdapter(adapter); // ← listView가 null이면 여기서 터짐
     }
 }

@@ -1,7 +1,6 @@
 package com.example.week5;
 
 import android.content.Context;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -21,7 +20,7 @@ public class ReadRaw {
         BufferedReader reader = new BufferedReader(streamReader);
         String line;
         while ((line = reader.readLine()) != null) {
-            buffer.append(line + '\n');
+            buffer.append(line).append('\n');
         }
         reader.close();
         streamReader.close();

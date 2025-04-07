@@ -65,17 +65,15 @@ public class DOMParser {
         ArrayList<Person> list = new ArrayList<>();
         Document document = makeDOM(xml);
         NodeList nodeList = document.getElementsByTagName("person");
+
         for (int i = 0; i < nodeList.getLength(); i++) {
-            Node node = nodeList.item(i);
-            if (node.getNodeType() == Node.ELEMENT_NODE) {
-                Element element = (Element) node;
-                String id = element.getAttribute("id");
-                String name = element.getElementsByTagName("name").item(0).getTextContent();
-                String age = element.getElementsByTagName("age").item(0).getTextContent();
-                list.add(new Person(id, name, age));
-            }
+            Element element = (Element) nodeList.item(i);
+            String id = element.getAttribute("id");
+            String name = element.getElementsByTagName("name").item(0).getTextContent();
+            String age = element.getElementsByTagName("age").item(0).getTextContent();
+            list.add(new Person(id, name, age));
         }
+
         return list;
     }
-
 }

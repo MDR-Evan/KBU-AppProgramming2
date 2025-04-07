@@ -24,20 +24,19 @@ public class PersonAdapter extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int i) {
-        return people.get(i);
+    public Object getItem(int position) {
+        return people.get(position);
     }
 
     @Override
-    public long getItemId(int i) {
-        return i;
+    public long getItemId(int position) {
+        return position;
     }
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         if (convertView == null) {
-            LayoutInflater inflater = LayoutInflater.from(context);
-            convertView = inflater.inflate(R.layout.list_item, parent, false);
+            convertView = LayoutInflater.from(context).inflate(R.layout.list_item, parent, false);
         }
 
         TextView textId = convertView.findViewById(R.id.text_id);
@@ -46,11 +45,10 @@ public class PersonAdapter extends BaseAdapter {
 
         Person person = people.get(position);
 
-        textId.setText(person.getId());
-        textName.setText(person.getName());
+        textId.setText("ID: " + person.getId());
+        textName.setText("이름: " + person.getName());
         textAge.setText(person.getAge() + " 세");
 
         return convertView;
     }
 }
-
