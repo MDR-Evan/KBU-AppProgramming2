@@ -1,0 +1,20 @@
+<countries>
+	<country name='South Korea' flag="https://cdn.pixabay.com/photo/2013/07/13/14/17/
+ south-korea-162427_1280.png">
+		<language>Korean</language>
+		<capital city='Seoul' />
+		<currency code='KRW'>South Korean won</currency>
+	</country>
+	<country name='Japan' flag='https://cdn.pixabay.com/photo/2013/07/13/14/15/
+ japan-162328_1280.png'>
+		<language>Japanese</language>
+		<capital city='Tokyo' />
+		<currency code='JPY'>Yen</currency>
+	</country>
+	<country name='India' flag='https://cdn.pixabay.com/photo/2016/08/24/17/07/
+ india-1617463_1280.png'>
+		<language>Hindi</language>
+		<capital city='New Delhi' />
+		<currency code='INR'>Indian Rupee</currency>
+	</country>
+</countries>
