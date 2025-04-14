@@ -14,7 +14,7 @@ import android.view.MenuItem;
 
 import com.google.android.material.tabs.TabLayout;
 
-public class MainActivity extends AppCompatActivity {
+public class  MainActivity extends AppCompatActivity {
      private TabLayout tabs;
      private SourceFragment sourceFragment = null;
      private ParserFragment parserFragment = null;

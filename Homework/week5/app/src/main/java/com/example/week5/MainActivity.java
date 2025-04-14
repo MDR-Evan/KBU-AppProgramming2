@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager2 viewPager;
     private MyApplication application;
     private int type = R.id.item1;
+    private SourceFragment sourceFragment = null;
+    private ParserFragment parserFragment = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,7 +81,26 @@ public class MainActivity extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         type = item.getItemId();
+        if (type == 1) {
+            application.setType(1);
+        } else if (type == 2) {
+            application.setType(2);
+        } else if (type == 3) {
+            application.setType(3);
+        } else if (type == 4) {
+            application.setType(4);
+        } else if (type == 5) {
+            application.setType(5);
+        }
+
         item.setChecked(true);
         return true;
+    }
+
+    private void update() {
+        sourceFragment = new SourceFragment(MainActivity.this, type);
+        parserFragment = new ParserFragment(MainActivity.this);
+        tabs.selectTab(tabs.getTabAt(2));
+        tabs.selectTab(tabs.getTabAt(0));
     }
 }
