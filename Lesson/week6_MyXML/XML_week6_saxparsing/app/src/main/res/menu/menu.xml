@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item1"
+            android:checked="true"
+            android:title="내부 문자열" />
+        <item
+            android:id="@+id/item2"
+            android:title="Raw 폴더" />
+        <item
+            android:id="@+id/item3"
+            android:title="Assets 폴더" />
+
+        <item android:title="WebSite Down 방법">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/item4"
+                        android:title="Thread" />
+                    <item
+                        android:id="@+id/item5"
+                        android:title="AsyncTask" />
+
+                </group>
+            </menu>
+        </item>
+
+    </group>
+</menu>
