@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <!-- 탭 레이아웃: Source, DOM, SAX, PULL -->
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/TL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabMode="fixed"
+        app:tabGravity="fill">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabSource"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Source" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabDOM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DOM" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabSAX"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAX" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabPULL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PULL" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <!-- 각 탭별 Fragment 교체용 ViewPager2 -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/VP2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
