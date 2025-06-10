@@ -16,7 +16,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class SourceFragment extends Fragment {
-    private static final String XML_URL = "http://192.168.93.1:8081/week6_country.xml";
+    private static final String XML_URL = "http://121.163.245.130:8081/week6_country.xml";
 
     @Nullable @Override
     public View onCreateView(@NonNull LayoutInflater inflater,

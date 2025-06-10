@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PullFragment extends Fragment {
-    private static final String XML_URL = "http://127.0.0.1:8081/week6_country.xml";
+    private static final String XML_URL = "http://121.163.245.130:8081/week6_country.xml";
 
     @Nullable @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
