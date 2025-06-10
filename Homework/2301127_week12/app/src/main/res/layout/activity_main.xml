@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnViewCustomers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CUSTOMER TABLE 보기"/>
+
+    <Button
+        android:id="@+id/btnViewProducts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PRODUCT TABLE 보기"/>
+
+    <Button
+        android:id="@+id/btnViewSales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SALE_TABLE 보기"/>
+
+    <Button
+        android:id="@+id/btnViewHong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="홍길동이가 구입한 제품과 가격은"/>
+
+    <Button
+        android:id="@+id/btnViewKim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="김대한이 구입한 제품과 가격은"/>
+
+    <TextView
+        android:id="@+id/tvResults"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#D3D3D3"
+        android:padding="8dp"
+        android:textSize="14sp"/>
+</LinearLayout>
