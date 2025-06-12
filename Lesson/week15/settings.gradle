@@ -1,0 +1,5 @@
+rootProject.name = "week15"
+include ":app"
+
+// 이제 dependencyResolutionManagement 은 사용하지 않습니다.
+// pluginManagement 만 남겨도 되지만, 간단히 전통적 방식으로 통일합니다.

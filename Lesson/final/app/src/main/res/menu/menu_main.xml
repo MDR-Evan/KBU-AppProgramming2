@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_thread"
+            android:title="통신: Thread"
+            android:checked="true"/>
+        <item
+            android:id="@+id/menu_async"
+            android:title="통신: AsyncTask"/>
+    </group>
+
+    <group android:checkableBehavior="single" android:menuCategory="secondary">
+        <item
+            android:id="@+id/menu_rect"
+            android:title="이미지: 사각형"
+            android:checked="true"/>
+        <item
+            android:id="@+id/menu_circle"
+            android:title="이미지: 원형"/>
+    </group>
+
+    <item
+        android:id="@+id/menu_music"
+        android:title="배경음악 켜기"
+        android:checkable="true"/>
+</menu>

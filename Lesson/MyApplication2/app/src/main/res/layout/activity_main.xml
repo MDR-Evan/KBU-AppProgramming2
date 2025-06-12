@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+    <!-- 2. JSON -> SQLITE 버튼 (한 줄) -->
+    <Button
+        android:id="@+id/btnJsonToSqlite"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="JSON -> SQLITE" />
+
+    <!-- 3. 급여 내림차순 / 급여 오름차순 버튼 (두 개) -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnSalaryDesc"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="급여 내림차순" />
+
+        <Button
+            android:id="@+id/btnSalaryAsc"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="급여 오름차순" />
+    </LinearLayout>
+
+    <!-- 4. 남자 / 여자 버튼 (두 개) -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp">
+
+        <Button
+            android:id="@+id/btnMale"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="남자" />
+
+        <Button
+            android:id="@+id/btnFemale"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="여자" />
+    </LinearLayout>
+
+    <!-- 5. 데이터가 없을 때 보여줄 메시지 -->
+    <!-- 기존 버튼들 아래에 추가 -->
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvEmployees"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_margin="16dp"/>
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="데이터가 없습니다"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:background="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        android:clipToPadding="false"
+        android:gravity="center" />
+
+
+
+</LinearLayout>

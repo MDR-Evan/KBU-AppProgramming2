@@ -1,0 +1,23 @@
+// Top-level build.gradle
+
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // Android Gradle Plugin 버전은 Android Studio와 맞춰주세요
+        classpath "com.android.tools.build:gradle:8.11.1"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
